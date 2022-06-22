@@ -1,6 +1,25 @@
+/* RESET */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* GENERAL  */
+.header .container,
+.main .container,
+.footer .container {
+    max-width: 1380px;
+    margin: 0 auto;
+    min-height: 40px;
+}
+
+
+/* DEBUG  */
+.debug * {
+    border: 2px solid sienna;
+}
+
+/* &hearts;  => color: red; background-color: white;  */
+
+/* MAIN  */

@@ -23,3 +23,13 @@
 /* &hearts;  => color: red; background-color: white;  */
 
 /* MAIN  */
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: calc(100% / 3);
+    padding-right: 20px;
+}

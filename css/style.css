@@ -11,7 +11,7 @@
 .footer .container {
     max-width: 1380px;
     margin: 0 auto;
-    min-height: 40px;
+    
 }
 
 
@@ -22,13 +22,51 @@
 
 /* &hearts;  => color: red; background-color: white;  */
 
+/* HEADER  */
+.header {
+    
+    background-color: rgb(213, 148, 27);
+    font-size: 16px;
+    font-weight: bold;
+    color: aliceblue;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.header .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.header ul {
+    list-style-type: none;
+    font-style: normal;
+    display: flex;
+    gap: 5px;
+}
+
+.header a {
+    color: white;
+    text-decoration-line: unset;
+}
+
+.header-img {
+    max-height: 30px;
+}
+
+
 /* MAIN  */
 
 .main .container {
-    padding-top: 50px;
+    padding-top: 120px;
 }
 
-.row {
+.main .row {
     display: flex;
     flex-wrap: wrap;
 }

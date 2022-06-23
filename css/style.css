@@ -53,15 +53,11 @@ ul {
     height: 70px;
 }
 
-
-/* .header a {
-    color: white;
-    text-decoration-line: unset;
-} */
-
 .header-img {
     max-height: 30px;
 }
+
+
 
 
 /* MAIN  */
@@ -73,20 +69,23 @@ ul {
 .main .row {
     display: flex;
     flex-wrap: wrap;
+    margin: 0 -20px;
 }
 
 .card {
     width: calc(100% / 3);
-    padding-right: 20px;
-    padding-bottom: 50px;
+    padding: 0 20px 50px 20px;
+    /* padding-right: 20px;
+    padding-bottom: 50px; */
 }
 
 .card-img-heart {
     position: relative;
 }
 
-.card-img {
-    width: -webkit-fill-available;
+.card-img,
+.card-img2 {
+    width: 100%;
 
 }
 
@@ -102,6 +101,12 @@ ul {
     top: 10px;
     right: 0%;
     font-size: 22px;
+    user-select: none;
+    cursor: pointer;
+}
+
+.card-heart:hover {
+    color: red;
 }
 
 .card-green-red {
@@ -109,6 +114,7 @@ ul {
     height: 25px; 
     position: absolute;
     bottom: 40px;
+    gap: 10px;
 }
 
 .red, 
@@ -123,7 +129,6 @@ ul {
 .red {
     width: 55px;
     background-color: red;
-    margin-right: 4px;
 }
 
 .green {
@@ -157,7 +162,7 @@ ul {
 .footer {
     background-color: black;
     color: white;
-    line-height: 1.6em;
+    line-height: 2em;
 }
 
 .footer .row {
@@ -171,4 +176,19 @@ ul {
     height: 18px;
 }
 
+
+/* OVERLAY CON GIANLUCA */
+
+.card-img2 {
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transition: opacity 400ms ease-in-out;
+
+} 
+
+.card:hover .card-img2 {
+    opacity: 1;
+}
 
